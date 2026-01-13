@@ -10,7 +10,9 @@ function MapView(routeData) {
     [28.6200, 77.2200],
   ];
   return (
-    <div style={{ height: "400px", width: "100%" }}>
+    <div style={{ width: "100%" }}>
+  <div style={{ height: "400px", width: "100%" }}>
+
       <MapContainer
         center={[28.6139, 77.2090]} // Delhi default
         zoom={13}
@@ -33,14 +35,15 @@ function MapView(routeData) {
           <Popup>You are here</Popup>
         </Marker>
       </MapContainer>
+      </div>
 
        {routeData && (
         <div
           style={{
-            marginTop: "10px",
-            padding: "10px",
-            background: "#f1ecf9",
-            borderRadius: "8px",
+            marginTop: "12px",
+    padding: "12px",
+    background: "#f1ecf9",
+    borderRadius: "10px"
           }}
         >
           <strong>Safety Score:</strong> 82 / 100
@@ -50,12 +53,19 @@ function MapView(routeData) {
       )}
 
        {routeData && (
-        <ul style={{ fontSize: "14px", marginTop: "5px" }}>
-          <li>⚠ Avoided low-lighting street near XYZ area</li>
-          <li>⚠ Higher crime frequency reported at night</li>
-          <li>✅ Route passes through well-lit main roads</li>
-        </ul>
-      )}
+  <div style={{
+    marginTop: "10px",
+    padding: "10px",
+    background: "#fff",
+    borderRadius: "10px"
+  }}>
+    <ul style={{ margin: 0, paddingLeft: "18px" }}>
+      <li>⚠ Avoided low-lighting street near XYZ area</li>
+      <li>⚠ Higher crime frequency reported at night</li>
+      <li>✅ Route passes through well-lit main roads</li>
+    </ul>
+  </div>
+)}
       
     </div>
   );

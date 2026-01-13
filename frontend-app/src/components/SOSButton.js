@@ -42,13 +42,15 @@ function SOSButton({ contacts }) {
     <button
       onClick={handleSOS}
       style={{
-        background: "red",
-        color: "white",
-        padding: "14px",
-        borderRadius: "12px",
-        width: "100%",
-        fontWeight: "bold",
-        fontSize: "16px",
+         background: "red",
+    color: "white",
+    padding: "10px 14px",
+    borderRadius: "12px",
+    width: "100%",
+    fontWeight: "bold",
+    fontSize: "16px",
+    border: "none",
+    cursor: "pointer"
       }}
     >
       🚨 SEND SOS ALERT

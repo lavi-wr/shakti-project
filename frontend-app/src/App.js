@@ -90,9 +90,10 @@ function App() {
           <MapView routeData={routeData} />
         </div>
 
-        <div className="card">
-          <SOSButton />
-        </div>
+       <div className="card" style={{ marginTop: "10px" }}>
+  <SOSButton />
+</div>
+
 
         {/* Optional */}
         {/* <div className="card"><Contacts /></div> */}
