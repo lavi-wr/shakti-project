@@ -13,11 +13,9 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import AuthPage from "./components/AuthPage";
 
 function App() {
-<<<<<<< Updated upstream
-  const [routeData, setRouteData] = useState(null);
-=======
+  // BOTH FEATURES MERGED 
   const [user, setUser] = useState(null);
->>>>>>> Stashed changes
+  const [routeData, setRouteData] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Track logged-in user
@@ -84,32 +82,20 @@ function App() {
           <p>AI-powered safety-first navigation for women & night commuters</p>
         </div>
 
-<<<<<<< Updated upstream
-       <div className="card">
-  <Controls onRoute={setRouteData} />
-</div>
-
-<div className="card">
-  <MapView routeData={routeData} />
-</div>
-
-        <div className="card"><SOSButton /></div>
-=======
         <div className="card">
-          <Controls />
+          <Controls onRoute={setRouteData} />
         </div>
 
         <div className="card">
-          <MapView />
+          <MapView routeData={routeData} />
         </div>
 
         <div className="card">
           <SOSButton />
         </div>
 
-        {/* Optional extra components */}
+        {/* Optional */}
         {/* <div className="card"><Contacts /></div> */}
->>>>>>> Stashed changes
 
         <Chatbot />
       </div>
