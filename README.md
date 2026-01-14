@@ -7,7 +7,7 @@
 **AI-Powered Safe Route Navigation for Women & Night Commuters**
 
 🔗 **Live Demo:** _(https://shakti-project.vercel.app/)_  
-🎥 **Video Demo:** _(Add YouTube/Drive link here)_
+🎥 **Video Demo:** _(https://drive.google.com/file/d/1XDYznmgY4uqmidifSvMaTtcYyfJrBEjG/view?usp=drivesdk)_
 
 ---
 
@@ -86,6 +86,180 @@ Emergency? → Press SOS → Alert Sent
 | Chatbot |	Rule-based AI Bot |
 
 ---
+
+## 📁 Project Structure
+SHAKTI/
+
+│
+
+├── backend-app/
+
+│   │
+
+│   ├── app/
+
+│   │   │
+
+│   │   ├── routes/
+
+│   │   │   ├── __init__.py
+
+│   │   │   ├── auth.py
+
+│   │   │   ├── crime_data.py
+
+│   │   │   ├── routes.py
+
+│   │   │   └── sos.py
+
+│   │   │
+
+│   │   ├── utils/
+
+│   │   │   ├── __init__.py
+
+│   │   │   ├── map_utils.py
+
+│   │   │   └── safety_scoring.py
+
+│   │   │
+
+│   │   ├── __init__.py
+
+│   │   ├── database.py
+
+│   │   ├── main.py
+
+│   │   ├── models.py
+
+│   │   └── schemas.py
+
+│   │
+
+│   ├── venv/
+
+│   ├── .env
+
+│   ├── README.md
+
+│   └── requirements.txt
+
+│
+
+├── frontend-app/
+
+│   │
+
+│   ├── node_modules/
+
+│   │
+
+│   ├── public/
+
+│   │
+
+│   ├── src/
+
+│   │   │
+
+│   │   ├── components/
+
+│   │   │   ├── AuthPage.js
+
+│   │   │   ├── Chatbot.js
+
+│   │   │   ├── Contacts.js
+
+│   │   │   ├── Controls.js
+
+│   │   │   ├── EmailLogin.js
+
+│   │   │   ├── EmailSignup.js
+
+│   │   │   ├── MapView.js
+
+│   │   │   ├── PhoneLogin.js
+
+│   │   │   ├── Sidebar.js
+
+│   │   │   ├── SOSButton.js
+
+│   │   │   └── shakti_bg.jpeg
+
+│   │   │
+
+│   │   ├── App.css
+
+│   │   ├── App.js
+
+│   │   ├── App.test.js
+
+│   │   ├── firebase.js
+
+│   │   ├── index.css
+
+│   │   ├── index.js
+
+│   │   ├── leafletFix.js
+
+│   │   ├── logo.svg
+
+│   │   ├── reportWebVitals.js
+
+│   │   └── setupTests.js
+
+│   │
+
+│   ├── .gitignore
+
+│   ├── package-lock.json
+
+│   ├── package.json
+
+│   └── README.md
+
+---
+
+
+## 🌍 Deployment
+### Frontend (Vercel)
+```bash
+npm run build
+```
+Deploy /build folder.
+
+### Environment Variables
+```env
+REACT_APP_FIREBASE_API_KEY=your_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+```
+
+---
+
+## 🏆 Hackathon Highlights
+
+- Safety-first navigation approach
+- Real-time SOS alert system
+- Simple phone-based authentication
+- Clean, user-focused UI
+
+---
+
+## 🤝 Team
+| Role | Contribution |
+|------|--------------|
+| Frontend Dev | UI & UX |
+| Backend Dev	| Firebase & Auth |
+| AI Logic | Route Safety Scoring |
+| Design | User Experience |
+
+---
+
+## 📄 License
+
+MIT License
+
+
 
 
 
