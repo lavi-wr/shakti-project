@@ -1,3 +1,5 @@
+
+import bgImage from "./shakti_bg.jpeg";
 import React, { useState } from "react";
 import PhoneLogin from "./PhoneLogin";
 import EmailLogin from "./EmailLogin";
@@ -12,7 +14,13 @@ export default function AuthPage() {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      background: "linear-gradient(135deg, #ffd5e5, #ffc6ff)"
+
+// Then in the style:
+background: `linear-gradient(rgba(237, 228, 231, 0.17), rgba(255, 198, 255, 0.23)), 
+             url(${bgImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat"
     }}>
       <div style={{
         width: "380px",
@@ -25,7 +33,7 @@ export default function AuthPage() {
         <h2 style={{
           textAlign: "center",
           marginBottom: "20px",
-          color: "#e91e63",
+          color: "#e91e62d7",
           fontWeight: "700"
         }}>
           Welcome to SHAKTI
