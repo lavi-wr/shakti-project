@@ -1,0 +1,95 @@
+# 🛡️ SHAKTI – AI Safety Navigation
+
+![SHAKTI Badge](https://img.shields.io/badge/SHAKTI-Safety_First-e91e63?style=for-the-badge)
+![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-10.7-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+**AI-Powered Safe Route Navigation for Women & Night Commuters**
+
+🔗 **Live Demo:** _(https://shakti-project.vercel.app/)_  
+🎥 **Video Demo:** _(Add YouTube/Drive link here)_
+
+---
+
+## 🎯 Problem Statement
+Every 16 minutes, a woman faces harassment in urban India.  
+SHAKTI addresses this by combining **safe route navigation**, **live tracking**, and **emergency SOS alerts** into one simple platform.
+
+---
+
+## ✨ Core Features
+
+| Feature | Description | Status |
+|------|-----------|------|
+| 🤖 AI Route Scoring | Suggests safer routes based on safety score | ✅ |
+| 🚨 One-Click SOS | Sends alert with live location | ✅ |
+| 📍 Live Location | Real-time GPS tracking | ✅ |
+| 💬 AI Safety Bot | 24/7 safety assistance | ✅ |
+| 🔐 Phone Authentication | OTP-based login | ✅ |
+
+---
+
+## 🗺️ Smart Navigation
+
+```js
+const routeOptions = {
+  safest: "🛡️ High safety (92/100)",
+  balanced: "⚖️ Balanced route (78/100)",
+  fastest: "⚡ Fastest path (65/100)"
+};
+```
+Users can choose routes based on safety vs speed preference.
+
+---
+
+## 🚨 Emergency SOS Flow
+1. Press SOS Button
+2. User Confirmation
+3. Auto-send:
+   - 📍 Live Location
+   - 📩 Alert Message
+   - 👥 Emergency Contacts
+  
+---
+
+## 🚀 Quick Start
+1️⃣ Clone & Install
+```bash
+git clone https://github.com/yourusername/shakti.git
+cd shakti
+npm install
+```
+
+2️⃣ Run App
+```bash
+npm start
+```
+Open http://localhost:3000
+
+---
+
+## 📱 User Flow
+Login → Add Emergency Contacts → Find Route →
+Choose Safest Path → Start Journey →
+Emergency? → Press SOS → Alert Sent
+
+---
+
+## 💻 Tech Stack
+| Layer |	Technology |
+|-------|------------|
+| Frontend | React 18 + Hooks |
+| Maps | Leaflet.js + React-Leaflet |
+| Auth | Firebase Authentication |
+| Backend |	Firebase Services |
+| AI Logic | Custom Safety Scoring |
+| Chatbot |	Rule-based AI Bot |
+
+---
+
+
+
+
+
+
+
